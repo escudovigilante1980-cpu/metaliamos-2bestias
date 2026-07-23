@@ -1,0 +1,13 @@
+function moverEnemigo(enemigo, jugador) {
+    if (enemigo.x < jugador.x) {
+        enemigo.x += 1; // Se mueve a la derecha
+    } else if (enemigo.x > jugador.x) {
+        enemigo.x -= 1; // Se mueve a la izquierda
+    }
+    
+    if (enemigo.y < jugador.y) {
+        enemigo.y += 1; // Se mueve hacia abajo
+    } else if (enemigo.y > jugador.y) {
+        enemigo.y -= 1; // Se mueve hacia arriba
+    }
+}
